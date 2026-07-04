@@ -6,7 +6,7 @@
     <title>PixBridge | 모바일 이미지 워크플로를 위한 Camera-to-API 클라이언트</title>
     <meta
       name="description"
-      content="PixBridge는 모바일에서 사진을 촬영해 자체 API로 전송하고, 응답 JSON의 필요한 필드를 앱 화면에 보기 좋게 표시합니다."
+      content="PixBridge는 모바일에서 촬영한 이미지를 사용자가 설정한 API로 전송하고, 응답 JSON의 필요한 필드를 앱 화면에 보기 쉽게 표시합니다."
     >
     <!-- Replace YOUR_GITHUB_USERNAME and repository path with the final GitHub Pages URL before publishing. -->
     <link rel="canonical" href="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/ko/">
@@ -18,7 +18,7 @@
     <meta property="og:title" content="PixBridge | Camera-to-API 클라이언트">
     <meta
       property="og:description"
-      content="모바일에서 사진을 촬영해 자체 API로 전송하고, 응답 JSON의 필요한 필드를 앱 화면에 보기 좋게 표시합니다."
+      content="모바일에서 촬영한 이미지를 사용자가 설정한 API로 전송하고, 응답 JSON의 필요한 필드를 앱 화면에 보기 쉽게 표시합니다."
     >
     <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/ko/">
     <meta property="og:locale" content="ko_KR">
@@ -64,9 +64,9 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">모바일 팀을 위한 Camera-to-API 클라이언트</p>
-            <h1>PixBridge는 현장 사진을 자체 이미지 API와 연결합니다.</h1>
+            <h1>모바일에서 촬영한 이미지를 사용자의 서버 API와 연결하세요.</h1>
             <p class="hero-lede">
-              사진을 촬영해 자체 API로 전송하고, 응답 JSON의 필요한 필드를 모바일 화면에 보기 좋게 표시합니다.
+              사진을 촬영해 사용자가 설정한 API로 전송하고, 응답 JSON의 필요한 필드를 모바일 화면에 보기 쉽게 표시합니다.
             </p>
             <div class="hero-actions">
               <!-- Replace # with the early testing signup URL before publishing. -->
@@ -108,11 +108,11 @@
         <div class="container two-column">
           <div>
             <p class="eyebrow">문제</p>
-            <h2>이미지 API 워크플로에는 실용적인 모바일 화면이 필요합니다.</h2>
+            <h2>이미지 API를 실제 모바일 환경에서 테스트할 방법이 필요합니다.</h2>
           </div>
           <div class="text-stack">
             <p>
-              이미지 API가 준비되어 있어도, 휴대폰에서 사진을 촬영하고 요청을 보내며 결과를 확인할 간단한 클라이언트가 필요한 경우가 많습니다.
+              이미지 API가 준비되어 있어도, 휴대폰에서 사진을 촬영하고 요청을 보내며 결과를 확인할 간단한 모바일 클라이언트가 필요한 경우가 많습니다.
             </p>
             <p>
               PixBridge는 카메라 입력, API 전송, 응답값 표시 흐름을 단순하게 연결하고 특정 백엔드 제공자에 묶이지 않습니다.
@@ -151,7 +151,7 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">사용 사례</p>
-            <h2>이미지 API를 테스트하고 실제 현장에서도 활용하려는 팀을 위해 설계되었습니다.</h2>
+            <h2>이미지 API 테스트부터 현장 활용까지 고려했습니다.</h2>
             <p>
               PixBridge는 초기 API 검증, 프로토타입 확인뿐 아니라 현장에서 사진을 촬영하고 구조화된 서버 결과를 빠르게 확인해야 하는 운영 흐름까지 지원합니다.
             </p>
@@ -205,8 +205,8 @@
               <p>반복되는 업무에 맞춰 응답값 표시 설정을 저장해 재사용합니다.</p>
             </article>
             <article>
-              <h3>전송 기록</h3>
-              <p>상태, 소요 시간, 응답 크기, 응답값 매칭 결과를 전송 후 확인합니다.</p>
+              <h3>전송 결과 확인</h3>
+              <p>전송 후 상태, 응답 크기, 응답값 매칭 결과를 확인할 수 있도록 준비하고 있습니다.</p>
             </article>
           </div>
         </div>
@@ -218,10 +218,10 @@
             <p class="eyebrow">개발자 예시</p>
             <h2>프리셋 가져오기와 서버 예시로 빠르게 시작합니다.</h2>
             <p>
-              예시는 응답값 설정 프리셋 가져오기 파일과 간단한 FastAPI 이미지 엔드포인트를 포함합니다.
+              예제 저장소에는 응답값 설정 프리셋 파일과 간단한 FastAPI 이미지 업로드 서버 예시가 포함되어 있습니다.
             </p>
             <div class="example-actions">
-              <a class="button secondary" href="https://github.com/pixbridge-app/examples.git" target="_blank" rel="noopener noreferrer">Github</a>
+              <a class="button secondary" href="https://github.com/pixbridge-app/examples.git" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
           <div class="code-tabs" data-tabs>
@@ -269,7 +269,7 @@ async def analyze(image: UploadFile = File(...)):
         <div class="container cta-panel">
           <p class="eyebrow">얼리 테스트</p>
           <h2>이미지 API 테스트부터 현장 활용까지, 모바일 카메라로 더 쉽게 연결해보세요.</h2>
-          <p>얼리 테스트 트랙에 참여해 PixBridge의 Camera-to-API 워크플로를 더 날카롭게 다듬어 주세요.</p>
+          <p>얼리 테스트에 참여해 PixBridge가 실제 이미지 API 워크플로에 더 잘 맞도록 피드백을 남겨주세요.</p>
           <div class="hero-actions">
             <a class="button primary" href="https://tally.so/r/EkYk9l" target="_blank" rel="noopener noreferrer">테스트 참여</a>
           </div>
@@ -279,13 +279,13 @@ async def analyze(image: UploadFile = File(...)):
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>&copy; <span data-year></span> PixBridge. Placeholder landing page.</p>
+        <p>&copy; 2026 PixBridge. 얼리 테스트 버전 안내 페이지입니다.</p>
         <div>
           <!-- Replace # with the privacy policy URL before publishing. -->
           <a href="#">개인정보</a>
           <!-- Replace # with the terms of service URL before publishing. -->
           <a href="#">이용약관</a>
-          <a href="https://github.com/pixbridge-app/examples.git" target="_blank" rel="noopener noreferrer">Github</a>
+          <a href="https://github.com/pixbridge-app/examples.git" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </footer>
