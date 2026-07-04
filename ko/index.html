@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PixBridge | 모바일 이미지 워크플로를 위한 Camera-to-API 클라이언트</title>
+    <meta
+      name="description"
+      content="PixBridge는 모바일에서 사진을 촬영해 자체 API로 전송하고, 응답 JSON의 필요한 필드를 앱 화면에 보기 좋게 표시합니다."
+    >
+    <!-- Replace YOUR_GITHUB_USERNAME and repository path with the final GitHub Pages URL before publishing. -->
+    <link rel="canonical" href="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/ko/">
+    <link rel="alternate" hreflang="en" href="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/">
+    <link rel="alternate" hreflang="ko" href="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/ko/">
+    <link rel="alternate" hreflang="x-default" href="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PixBridge">
+    <meta property="og:title" content="PixBridge | Camera-to-API 클라이언트">
+    <meta
+      property="og:description"
+      content="모바일에서 사진을 촬영해 자체 API로 전송하고, 응답 JSON의 필요한 필드를 앱 화면에 보기 좋게 표시합니다."
+    >
+    <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/ko/">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PixBridge | Camera-to-API 클라이언트">
+    <meta
+      name="twitter:description"
+      content="모바일 이미지 워크플로를 위한 가벼운 Camera-to-API 클라이언트입니다."
+    >
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body data-page-lang="ko">
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="PixBridge 홈">
+        <span class="brand-mark" aria-hidden="true">PB</span>
+        <span>PixBridge</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="sr-only">메뉴 열기</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="#how">작동 방식</a>
+        <a href="#features">기능</a>
+        <a href="#developers">예시</a>
+        <!-- Replace # with the product waitlist, docs, or contact URL before publishing. -->
+        <a class="nav-cta" href="#cta">테스트 참여</a>
+        <span class="language-switch" aria-label="언어 전환">
+          <a href="../">EN</a>
+          <span aria-hidden="true">/</span>
+          <a aria-current="page" href="./">KO</a>
+        </span>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-band">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">모바일 팀을 위한 Camera-to-API 클라이언트</p>
+            <h1>PixBridge는 현장 사진을 자체 이미지 API와 연결합니다.</h1>
+            <p class="hero-lede">
+              사진을 촬영해 자체 API로 전송하고, 응답 JSON의 필요한 필드를 모바일 화면에 보기 좋게 표시합니다.
+            </p>
+            <div class="hero-actions">
+              <!-- Replace # with the early testing signup URL before publishing. -->
+              <a class="button primary" href="#cta">테스트 참여</a>
+              <!-- Replace # with the public documentation URL before publishing. -->
+              <a class="button secondary" href="#developers">예시 보기</a>
+            </div>
+          </div>
+
+          <div class="product-shot" aria-label="PixBridge 제품 미리보기">
+            <div class="phone-frame">
+              <div class="phone-top"></div>
+              <div class="camera-panel">
+                <div class="scan-box">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p>카메라 미리보기</p>
+              </div>
+              <div class="response-panel">
+                <div class="response-header">
+                  <span>Status 200</span>
+                  <span>JSON</span>
+                </div>
+                <pre>{
+  "type": "inspection",
+  "confidence": 0.97,
+  "result": "ready"
+}</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section problem" id="problem">
+        <div class="container two-column">
+          <div>
+            <p class="eyebrow">문제</p>
+            <h2>이미지 API 워크플로에는 실용적인 모바일 화면이 필요합니다.</h2>
+          </div>
+          <div class="text-stack">
+            <p>
+              이미지 API가 준비되어 있어도, 휴대폰에서 사진을 촬영하고 요청을 보내며 결과를 확인할 간단한 클라이언트가 필요한 경우가 많습니다.
+            </p>
+            <p>
+              PixBridge는 카메라 입력, API 전송, 응답값 표시 흐름을 단순하게 연결하고 특정 백엔드 제공자에 묶이지 않습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="how">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">작동 방식</p>
+            <h2>사진에서 응답까지 세 단계.</h2>
+          </div>
+          <div class="steps">
+            <article class="step-card">
+              <span>01</span>
+              <h3>촬영</h3>
+              <p>사용자는 빠른 현장 사용에 맞춘 모바일 흐름에서 사진을 촬영하거나 선택합니다.</p>
+            </article>
+            <article class="step-card">
+              <span>02</span>
+              <h3>전송</h3>
+              <p>이미지는 사용자가 구성한 서버 API 엔드포인트로 통합 규칙에 맞춰 전송됩니다.</p>
+            </article>
+            <article class="step-card">
+              <span>03</span>
+              <h3>표시</h3>
+              <p>응답 JSON의 필요한 필드를 검토, 테스트, 운영 확인에 적합한 결과 화면으로 표시합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="use-cases">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">사용 사례</p>
+            <h2>이미지 API를 테스트하고 실제 현장에서도 활용하려는 팀을 위해 설계되었습니다.</h2>
+            <p>
+              PixBridge는 초기 API 검증, 프로토타입 확인뿐 아니라 현장에서 사진을 촬영하고 구조화된 서버 결과를 빠르게 확인해야 하는 운영 흐름까지 지원합니다.
+            </p>
+          </div>
+          <div class="use-case-grid">
+            <article>
+              <h3>시각 검사</h3>
+              <p>제품, 장비, 현장 사진을 촬영하고 API가 감지한 상태 필드를 확인합니다.</p>
+            </article>
+            <article>
+              <h3>문서 접수</h3>
+              <p>영수증, 양식, 라벨, 신분증 이미지를 자체 추출 파이프라인으로 보냅니다.</p>
+            </article>
+            <article>
+              <h3>프로토타입 검증</h3>
+              <p>전용 앱을 만들기 전에 모바일 클라이언트에서 이미지 분류, OCR, 감지 서비스를 테스트합니다.</p>
+            </article>
+            <article>
+              <h3>운영 QA</h3>
+              <p>내부 사용자에게 구조화된 서버 응답을 확인할 수 있는 가벼운 촬영 도구를 제공합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="features">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">기능</p>
+            <h2>집중된 Camera-to-API 루프에 필요한 요소.</h2>
+          </div>
+          <div class="feature-grid">
+            <article>
+              <h3>모바일 우선 촬영</h3>
+              <p>작은 화면에서도 빠르게 사진을 촬영하고 응답을 명확하게 검토하도록 설계되었습니다.</p>
+            </article>
+            <article>
+              <h3>자체 백엔드 연결</h3>
+              <p>사용자가 운영하는 API에 연결합니다. PixBridge는 특정 이미지 백엔드를 요구하지 않습니다.</p>
+            </article>
+            <article>
+              <h3>응답값 필드 표시</h3>
+              <p>필요한 JSON 필드를 선택해 앱 화면에 명확하게 표시합니다.</p>
+            </article>
+            <article>
+              <h3>구성 가능한 요청 흐름</h3>
+              <p>자체 API에 맞게 엔드포인트, 이미지 필드, 인코딩, 인증 옵션을 설정합니다.</p>
+            </article>
+            <article>
+              <h3>응답값 설정 프리셋</h3>
+              <p>반복되는 업무에 맞춰 응답값 표시 설정을 저장해 재사용합니다.</p>
+            </article>
+            <article>
+              <h3>전송 기록</h3>
+              <p>상태, 소요 시간, 응답 크기, 응답값 매칭 결과를 전송 후 확인합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="developers">
+        <div class="container developer-grid">
+          <div>
+            <p class="eyebrow">개발자 예시</p>
+            <h2>프리셋 가져오기와 서버 예시로 빠르게 시작합니다.</h2>
+            <p>
+              예시는 응답값 설정 프리셋 가져오기 파일과 간단한 FastAPI 이미지 엔드포인트를 포함합니다.
+            </p>
+            <div class="example-actions">
+              <a class="button secondary" href="https://github.com/pixbridge-app/examples.git" target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+          </div>
+          <div class="code-tabs" data-tabs>
+            <div class="tab-list" role="tablist" aria-label="개발자 예시">
+              <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab="response-setting">프리셋 가져오기</button>
+              <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="fastapi">FastAPI</button>
+            </div>
+            <pre class="code-panel active" data-panel="response-setting"><code>{
+  "schema": "pix_bridge_response_presets",
+  "version": 1,
+  "presets": [
+    {
+      "presetNickname": "Inspection Summary",
+      "responsePreset": [
+        {
+          "responseKeyNickname": "Result",
+          "responseKeyTitle": "result",
+          "runtimeType": "string"
+        },
+        {
+          "responseKeyNickname": "Confidence",
+          "responseKeyTitle": "confidence",
+          "runtimeType": "double"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+            <pre class="code-panel" data-panel="fastapi"><code>from fastapi import FastAPI, UploadFile, File
+
+app = FastAPI()
+
+@app.post("/analyze")
+async def analyze(image: UploadFile = File(...)):
+    return {
+        "result": "ready",
+        "confidence": 0.97,
+        "summary": "Sample response"
+    }</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section" id="cta">
+        <div class="container cta-panel">
+          <p class="eyebrow">얼리 테스트</p>
+          <h2>이미지 API 테스트부터 현장 활용까지, 모바일 카메라로 더 쉽게 연결해보세요.</h2>
+          <p>얼리 테스트 트랙에 참여해 PixBridge의 Camera-to-API 워크플로를 더 날카롭게 다듬어 주세요.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://tally.so/r/EkYk9l" target="_blank" rel="noopener noreferrer">테스트 참여</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span data-year></span> PixBridge. Placeholder landing page.</p>
+        <div>
+          <!-- Replace # with the privacy policy URL before publishing. -->
+          <a href="#">개인정보</a>
+          <!-- Replace # with the terms of service URL before publishing. -->
+          <a href="#">이용약관</a>
+          <a href="https://github.com/pixbridge-app/examples.git" target="_blank" rel="noopener noreferrer">Github</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

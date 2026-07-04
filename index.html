@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PixBridge | Camera-to-API Client for Mobile Image Workflows</title>
+  <meta name="description"
+    content="PixBridge captures photos on mobile, sends them to your own API, and maps selected JSON fields into a clear result screen.">
+  <!-- Replace YOUR_GITHUB_USERNAME and repository path with the final GitHub Pages URL before publishing. -->
+  <link rel="canonical" href="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/">
+  <link rel="alternate" hreflang="en" href="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/">
+  <link rel="alternate" hreflang="ko" href="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/ko/">
+  <link rel="alternate" hreflang="x-default" href="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PixBridge">
+  <meta property="og:title" content="PixBridge | Camera-to-API Client">
+  <meta property="og:description"
+    content="Capture photos on mobile, send them to your own API, and map selected JSON fields into a clear result screen.">
+  <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PixBridge | Camera-to-API Client">
+  <meta name="twitter:description"
+    content="A lightweight Camera-to-API client for mobile image workflows.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page-lang="en">
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="PixBridge home">
+      <span class="brand-mark" aria-hidden="true">PB</span>
+      <span>PixBridge</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="sr-only">Toggle navigation</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" data-nav>
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#developers">Examples</a>
+      <!-- Replace # with the product waitlist, docs, or contact URL before publishing. -->
+      <a class="nav-cta" href="#cta">Join testing</a>
+      <span class="language-switch" aria-label="Language switch">
+        <a aria-current="page" href="./">EN</a>
+        <span aria-hidden="true">/</span>
+        <a href="ko/">KO</a>
+      </span>
+    </nav>
+  </header>
+
+  <div class="language-banner" data-ko-banner hidden>
+    <div class="container language-banner-inner">
+      <p>Browser language looks Korean. Korean page is available.</p>
+      <div>
+        <a href="ko/">Go to Korean</a>
+        <button type="button" data-ko-banner-close>Stay in English</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero section-band">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Camera-to-API client for mobile teams</p>
+          <h1>PixBridge connects field photos to your own image API.</h1>
+          <p class="hero-lede">
+            Capture a photo, send it to your own API, and turn selected JSON fields into a mobile-friendly result view.
+          </p>
+          <div class="hero-actions">
+            <!-- Replace # with the early testing signup URL before publishing. -->
+            <a class="button primary" href="#cta">Join testing</a>
+            <!-- Replace # with the public documentation URL before publishing. -->
+            <a class="button secondary" href="#developers">View examples</a>
+          </div>
+        </div>
+
+        <div class="product-shot" aria-label="PixBridge product preview">
+          <div class="phone-frame">
+            <div class="phone-top"></div>
+            <div class="camera-panel">
+              <div class="scan-box">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>Camera preview</p>
+            </div>
+            <div class="response-panel">
+              <div class="response-header">
+                <span>Status 200</span>
+                <span>JSON</span>
+              </div>
+              <pre>{
+  "type": "inspection",
+  "confidence": 0.97,
+  "result": "ready"
+}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem" id="problem">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Problem</p>
+          <h2>Image API workflows need a practical mobile front end.</h2>
+        </div>
+        <div class="text-stack">
+          <p>
+            Many teams already have an image API, but still need a simple way to capture photos, send requests, and
+            review results from a phone.
+          </p>
+          <p>
+            PixBridge keeps that loop focused: camera input, API delivery, and readable response fields without tying
+            teams to a specific backend.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="how">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps from photo to response.</h2>
+        </div>
+        <div class="steps">
+          <article class="step-card">
+            <span>01</span>
+            <h3>Capture</h3>
+            <p>Users take or select a photo from a mobile workflow designed for quick field use.</p>
+          </article>
+          <article class="step-card">
+            <span>02</span>
+            <h3>Send</h3>
+            <p>The image is sent to your configured server API endpoint using your integration rules.</p>
+          </article>
+          <article class="step-card">
+            <span>03</span>
+            <h3>Display</h3>
+            <p>Selected JSON fields are mapped into a readable result view for review, testing, or operations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="use-cases">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Use cases</p>
+          <h2>Built for teams moving image APIs from testing into field use.</h2>
+          <p>
+            PixBridge supports early API validation, prototype review, and practical on-site workflows where teams need
+            to capture photos and check structured server results quickly.
+          </p>
+        </div>
+        <div class="use-case-grid">
+          <article>
+            <h3>Visual inspection</h3>
+            <p>Capture product, equipment, or site photos and review API-detected status fields.</p>
+          </article>
+          <article>
+            <h3>Document intake</h3>
+            <p>Send receipts, forms, labels, or IDs to your own extraction pipeline.</p>
+          </article>
+          <article>
+            <h3>Prototype validation</h3>
+            <p>Test image classification, OCR, or detection services from a mobile client before building a custom app.
+            </p>
+          </article>
+          <article>
+            <h3>Operations QA</h3>
+            <p>Give internal users a lightweight capture tool for structured server response checks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2>Everything needed for a focused Camera-to-API loop.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Mobile-first capture</h3>
+            <p>Designed around fast photo capture and clear response review on small screens.</p>
+          </article>
+          <article>
+            <h3>Your backend</h3>
+            <p>Connect to an API you operate. PixBridge does not require a proprietary image backend.</p>
+          </article>
+          <article>
+            <h3>Response field mapping</h3>
+            <p>Pick the JSON fields that matter and show them clearly in the app.</p>
+          </article>
+          <article>
+            <h3>Configurable request flow</h3>
+            <p>Prepare endpoint, image field, encoding, and auth options for your own API.</p>
+          </article>
+          <article>
+            <h3>Response presets</h3>
+            <p>Save reusable response display settings for repeated workflows.</p>
+          </article>
+          <article>
+            <h3>Send history</h3>
+            <p>Review status, timing, response size, and key match results after each send.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="developers">
+      <div class="container developer-grid">
+        <div>
+          <p class="eyebrow">Developer examples</p>
+          <h2>Start with preset imports or a server example.</h2>
+          <p>
+            Examples include Response Setting preset import files and a minimal FastAPI image endpoint.
+          </p>
+          <div class="example-actions">
+            <a class="button secondary" href="https://github.com/pixbridge-app/examples.git" target="_blank"
+              rel="noopener noreferrer">Github</a>
+          </div>
+        </div>
+        <div class="code-tabs" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Developer examples">
+            <button class="tab-button active" type="button" role="tab" aria-selected="true"
+              data-tab="response-setting">Preset import</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false"
+              data-tab="fastapi">FastAPI</button>
+          </div>
+          <pre class="code-panel active" data-panel="response-setting"><code>{
+  "schema": "pix_bridge_response_presets",
+  "version": 1,
+  "presets": [
+    {
+      "presetNickname": "Inspection Summary",
+      "responsePreset": [
+        {
+          "responseKeyNickname": "Result",
+          "responseKeyTitle": "result",
+          "runtimeType": "string"
+        },
+        {
+          "responseKeyNickname": "Confidence",
+          "responseKeyTitle": "confidence",
+          "runtimeType": "double"
+        }
+      ]
+    }
+  ]
+}</code></pre>
+          <pre class="code-panel" data-panel="fastapi"><code>from fastapi import FastAPI, UploadFile, File
+
+app = FastAPI()
+
+@app.post("/analyze")
+async def analyze(image: UploadFile = File(...)):
+    return {
+        "result": "ready",
+        "confidence": 0.97,
+        "summary": "Sample response"
+    }</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="cta">
+      <div class="container cta-panel">
+        <p class="eyebrow">Early testing</p>
+        <h2>Connect your image API to real mobile camera workflows, from testing to field use.</h2>
+        <p>Join the early testing track and help shape a sharper Camera-to-API workflow for mobile teams.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://tally.so/r/EkYk9l" target="_blank" rel="noopener noreferrer">Join testing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span data-year></span> PixBridge. Placeholder landing page.</p>
+      <div>
+        <!-- Replace # with the privacy policy URL before publishing. -->
+        <a href="#">Privacy</a>
+        <!-- Replace # with the terms of service URL before publishing. -->
+        <a href="#">Terms</a>
+        <a href="https://github.com/pixbridge-app/examples.git" target="_blank" rel="noopener noreferrer">Github</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
