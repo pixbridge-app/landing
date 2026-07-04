@@ -1,5 +1,4 @@
-# Replace the Sitemap URL with the final GitHub Pages URL before publishing.
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/sitemap.xml
+Sitemap: https://pixbridge-app.github.io/landing/sitemap.xml

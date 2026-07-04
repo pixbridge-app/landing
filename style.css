@@ -116,6 +116,19 @@ p {
   color: var(--brand-dark);
 }
 
+.document-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #40515a;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.document-nav a:hover {
+  color: var(--brand-dark);
+}
+
 .nav-cta {
   padding: 10px 14px;
   border: 1px solid var(--line);
@@ -521,6 +534,89 @@ pre {
   background: var(--dark-soft);
 }
 
+.document-main {
+  padding: 72px 0 88px;
+}
+
+.document-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.document-hero {
+  position: sticky;
+  top: 104px;
+}
+
+.document-hero h1 {
+  margin-bottom: 18px;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+}
+
+.document-meta {
+  margin-bottom: 20px;
+  color: var(--brand-dark);
+  font-weight: 850;
+}
+
+.document-card {
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 16px 42px rgba(23, 32, 38, 0.08);
+}
+
+.document-card section + section {
+  margin-top: 34px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+
+.document-card h2 {
+  margin-bottom: 12px;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+}
+
+.document-card h3 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.document-card p,
+.document-card li {
+  color: #4e5d66;
+}
+
+.document-card ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.document-card li + li {
+  margin-top: 8px;
+}
+
+.document-note {
+  padding: 16px;
+  border-left: 4px solid var(--accent);
+  background: #fff9ea;
+}
+
+.document-note p:last-child,
+.document-card p:last-child {
+  margin-bottom: 0;
+}
+
+.document-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
 .developer-grid {
   align-items: start;
 }
@@ -641,6 +737,21 @@ pre {
     padding: 10px 4px;
   }
 
+  .document-nav {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .document-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .document-hero {
+    position: static;
+  }
+
   .language-switch {
     justify-content: center;
     padding-top: 6px;
@@ -695,6 +806,10 @@ pre {
   .section,
   .section-band {
     padding: 64px 0;
+  }
+
+  .document-main {
+    padding: 52px 0 68px;
   }
 
   h1 {
@@ -752,8 +867,15 @@ pre {
   .step-card,
   .use-case-grid article,
   .feature-grid article,
-  .cta-panel {
+  .cta-panel,
+  .document-card {
     padding: 22px;
+  }
+
+  .document-nav {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 0.9rem;
   }
 
   .code-panel {

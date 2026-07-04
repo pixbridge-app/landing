@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>개인정보 처리방침 | PixBridge</title>
+    <meta
+      name="description"
+      content="PixBridge 초기 테스트용 개인정보 처리방침 초안입니다."
+    >
+    <link rel="canonical" href="https://pixbridge-app.github.io/landing/ko/privacy/">
+    <link rel="alternate" hreflang="en" href="https://pixbridge-app.github.io/landing/privacy/">
+    <link rel="alternate" hreflang="ko" href="https://pixbridge-app.github.io/landing/ko/privacy/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PixBridge">
+    <meta property="og:title" content="개인정보 처리방침 | PixBridge">
+    <meta
+      property="og:description"
+      content="PixBridge 초기 테스트 중 개인정보와 설정 데이터가 어떻게 처리될 수 있는지 설명합니다."
+    >
+    <meta property="og:url" content="https://pixbridge-app.github.io/landing/ko/privacy/">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="개인정보 처리방침 | PixBridge">
+    <meta
+      name="twitter:description"
+      content="PixBridge 초기 테스트용 개인정보 처리방침 초안입니다."
+    >
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="PixBridge 홈">
+        <span class="brand-mark" aria-hidden="true">PB</span>
+        <span>PixBridge</span>
+      </a>
+      <nav class="document-nav" aria-label="문서 내비게이션">
+        <a href="../">홈</a>
+        <a href="../terms/">이용약관</a>
+        <span class="language-switch" aria-label="언어 전환">
+          <a href="../../privacy/">EN</a>
+          <span aria-hidden="true">/</span>
+          <a aria-current="page" href="./">KO</a>
+        </span>
+      </nav>
+    </header>
+
+    <main class="document-main">
+      <div class="container document-layout">
+        <aside class="document-hero">
+          <p class="eyebrow">PixBridge</p>
+          <h1>개인정보 처리방침</h1>
+          <p class="document-meta">시행일: 2026년 7월 4일</p>
+          <p>
+            이 문서는 PixBridge 초기 테스트 단계에서 앱과 관련 페이지가 개인정보 및 설정 데이터를 어떻게 처리할 수 있는지 설명하는 검토용 초안입니다.
+          </p>
+          <div class="document-actions">
+            <a class="button secondary" href="../">PixBridge로 돌아가기</a>
+            <a class="button secondary" href="../../privacy/">English</a>
+          </div>
+        </aside>
+
+        <article class="document-card">
+          <section>
+            <h2>1. 개요</h2>
+            <p>
+              PixBridge는 모바일 Camera-to-API 클라이언트입니다. 사용자는 모바일 기기에서 이미지를 촬영하고, 사용자가 설정한 서버 API로 이미지를 전송한 뒤, API가 반환한 JSON 응답 중 선택한 필드를 앱 화면에서 확인할 수 있습니다.
+            </p>
+            <p>
+              PixBridge는 현재 초기 테스트 또는 테스트 준비 단계에 있습니다. 이 처리방침은 예상되는 데이터 처리 방식을 설명하기 위한 초안이며, 정식 출시 전 운영 주체가 검토하고 수정할 수 있습니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>2. 수집할 수 있는 정보</h2>
+            <h3>계정 정보</h3>
+            <p>
+              계정 기능이 제공되는 경우, 로그인, 인증, 계정 식별자, 사용자 설정과 관련된 정보가 처리될 수 있습니다.
+            </p>
+            <h3>서버 설정 데이터</h3>
+            <p>
+              사용자는 서버 주소, 요청 방식 또는 전송 형식, 이미지 필드명, 응답값 key, label, type 및 관련 앱 설정을 저장할 수 있습니다. 이러한 설정은 동기화 또는 재사용을 위해 사용자 계정과 연결되어 저장될 수 있습니다.
+            </p>
+            <h3>사용자가 입력하는 선택적 인증 토큰</h3>
+            <p>
+              사용자는 자신의 API 인증을 위해 Bearer token 또는 유사한 인증 값을 선택적으로 입력할 수 있습니다. 이러한 값은 사용자가 직접 입력하는 인증 정보이므로 사용자가 신중하게 관리해야 합니다.
+            </p>
+            <h3>사용자가 촬영하고 전송하는 이미지</h3>
+            <p>
+              사용자는 모바일 앱에서 이미지를 촬영하거나 선택할 수 있습니다. 일반적인 앱 사용 과정에서 PixBridge는 해당 이미지를 사용자가 설정한 서버 API로 전송합니다.
+            </p>
+            <h3>API 응답 데이터</h3>
+            <p>
+              PixBridge는 사용자가 설정한 API가 반환한 JSON 응답을 읽고, 사용자가 설정한 key 또는 필드만 앱 화면에 표시할 수 있습니다. 응답값 설정에는 key, label, type, 기본 표시 값 등이 포함될 수 있습니다.
+            </p>
+            <h3>초기 테스트 신청 정보</h3>
+            <p>
+              초기 테스트 신청 폼은 이름, 이메일 주소, 소속, 사용 사례, 피드백 등을 수집할 수 있습니다. 이러한 정보는 초기 테스트 연락과 제품 개선 목적으로 사용될 수 있습니다.
+            </p>
+            <h3>기본 기술/로그 데이터</h3>
+            <p>
+              PixBridge 또는 관련 서비스 제공자는 앱 버전, 기기 정보, 요청 상태, 오류 정보, 처리 시간, 응답 크기 등 운영 및 개선에 필요한 기본 기술 정보를 처리할 수 있습니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>3. 정보 이용 목적</h2>
+            <ul>
+              <li>Camera-to-API 워크플로 제공</li>
+              <li>서버 설정과 응답값 설정 저장 및 재사용</li>
+              <li>응답 JSON의 선택된 필드 표시</li>
+              <li>계정, 인증, 동기화, 초기 테스트 연락 지원</li>
+              <li>오류 해결, 안정성 개선, 테스트 피드백 반영</li>
+              <li>서비스, 사용자, 관련 시스템의 오남용 방지</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>4. 이미지 및 API 데이터 처리</h2>
+            <p>
+              PixBridge는 사용자가 촬영하거나 선택한 이미지를 사용자가 설정한 서버 API로 전송합니다. 일반적인 앱 사용 과정에서 PixBridge 자체 서버가 이미지를 분석하는 서비스를 제공하지 않습니다.
+            </p>
+            <p>
+              API 응답은 사용자가 설정한 서버에서 반환됩니다. PixBridge는 사용자의 응답값 설정에 따라 JSON 응답 중 선택된 key를 읽고 모바일 화면에 표시할 수 있습니다.
+            </p>
+            <p>
+              사용자는 개인정보, 민감정보, 타인의 얼굴, 차량번호, 신분증, 위치정보, 기밀 자료가 포함된 이미지를 전송할 때 적절한 권리, 권한, 보호 조치를 갖추었는지 확인해야 합니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>5. 사용자 설정 서버 및 제3자 API</h2>
+            <p>
+              PixBridge는 사용자가 설정한 API 엔드포인트로 이미지를 전송합니다. 해당 외부 서버에서 이미지를 저장, 분석, 보관, 삭제, 보호하는 방식은 사용자 또는 해당 서버/API 운영자의 책임입니다.
+            </p>
+            <p>
+              사용자는 PixBridge에 연결하는 서버와 제3자 API의 개인정보 처리 및 보안 정책을 직접 검토해야 합니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>6. 제3자 서비스</h2>
+            <p>PixBridge는 앱 운영, 테스트, 호스팅, 커뮤니케이션을 위해 다음과 같은 제3자 서비스를 사용할 수 있습니다.</p>
+            <ul>
+              <li>Firebase 또는 유사한 백엔드 서비스: 인증, 앱 설정, 계정 연동 설정, 데이터 동기화 등</li>
+              <li>Tally 또는 유사한 폼 서비스: 초기 테스트 신청, 문의, 피드백 수집 등</li>
+              <li>GitHub Pages: 랜딩 페이지, 정책 페이지 및 관련 정적 콘텐츠 호스팅</li>
+            </ul>
+            <p>
+              이러한 제3자 서비스는 각자의 약관과 개인정보 처리방침에 따라 데이터를 처리할 수 있습니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>7. 데이터 보관</h2>
+            <p>
+              PixBridge는 서비스 제공, 테스트 지원, 문제 해결, 운영상 필요를 위해 계정 연동 설정, 서버 설정, 응답값 설정, 초기 테스트 신청 정보, 기술 기록을 필요한 기간 동안 보관할 수 있습니다.
+            </p>
+            <p>
+              사용자가 설정한 외부 서버는 자체 정책에 따라 이미지 또는 API 데이터를 보관할 수 있습니다. PixBridge는 사용자가 설정한 외부 서버의 보관 정책을 통제하지 않습니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. 보안</h2>
+            <p>
+              PixBridge는 서비스 단계에 맞는 합리적인 기술적, 관리적 보호 조치를 적용하려고 합니다. 다만 모바일 앱, 네트워크 전송, 외부 API 연결이 항상 완전히 안전하다고 보장할 수는 없습니다.
+            </p>
+            <p>
+              사용자는 장기 권한 또는 과도한 권한이 있는 Bearer token 입력을 피하고, 노출 또는 오남용이 의심되는 경우 토큰을 회전하거나 폐기하는 것이 좋습니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>9. 사용자 선택과 책임</h2>
+            <ul>
+              <li>사용자는 어떤 서버 API에 연결하고 어떤 이미지를 전송할지 선택합니다.</li>
+              <li>사용자는 촬영, 업로드, 처리하는 이미지에 대해 적절한 권리와 권한을 가지고 있어야 합니다.</li>
+              <li>사용자는 토큰 권한 범위, 서버 보안, 제3자 API 정책을 확인한 뒤 PixBridge에 연결해야 합니다.</li>
+              <li>사용자는 PixBridge의 데이터 처리에 대해 문의하거나 도움을 요청할 수 있습니다.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>10. 아동의 개인정보</h2>
+            <p>
+              PixBridge는 아동을 대상으로 설계된 서비스가 아닙니다. 사용자는 적법한 근거와 권한 없이 아동에 관한 정보 또는 아동의 이미지를 제출해서는 안 됩니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>11. 국제적 이용 가능성</h2>
+            <p>
+              PixBridge는 테스트 과정에서 여러 지역에서 접근될 수 있습니다. 데이터는 사용자의 국가 또는 지역 외부에 위치한 제3자 서비스나 인프라를 통해 처리될 수 있습니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>12. 처리방침 변경</h2>
+            <p>
+              PixBridge는 앱, 테스트 프로그램, 제3자 서비스, 법적 요구사항 변경에 따라 이 개인정보 처리방침을 업데이트할 수 있습니다. 중요한 변경이 있는 경우 시행일을 갱신합니다.
+            </p>
+          </section>
+
+          <section>
+            <h2>13. 연락처</h2>
+            <div class="document-note">
+              <p>
+                이 개인정보 처리방침 또는 PixBridge의 데이터 처리에 관한 문의:
+                <a href="mailto:pixbridge.personalplanet@gmail.com">pixbridge.personalplanet@gmail.com</a>
+              </p>
+              <!-- 공식 비즈니스 연락처가 확정되면 이 주소를 수정하세요. -->
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 PixBridge. 얼리 테스트 버전 안내 페이지입니다.</p>
+        <div>
+          <a href="./">개인정보 처리방침</a>
+          <a href="../terms/">이용약관</a>
+          <a href="https://github.com/pixbridge-app/examples.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

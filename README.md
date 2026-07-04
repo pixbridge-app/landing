@@ -7,7 +7,15 @@ Static landing website for PixBridge, a mobile Camera-to-API client that capture
 ```text
 .
 ├── index.html
+├── privacy/
+│   └── index.html
+├── terms/
+│   └── index.html
 ├── ko/
+│   ├── privacy/
+│   │   └── index.html
+│   ├── terms/
+│   │   └── index.html
 │   └── index.html
 ├── style.css
 ├── script.js
@@ -32,11 +40,9 @@ This project uses only HTML, CSS, and vanilla JavaScript, so it can be deployed 
 
 ## Publishing checklist
 
-- Replace all `#` placeholder links in `index.html`.
-- Replace all `#` placeholder links in `ko/index.html`.
 - Testing participation CTA links to `https://tally.so/r/EkYk9l`.
-- Replace `https://YOUR_GITHUB_USERNAME.github.io/PixBridge-landing/` placeholders in canonical, hreflang, Open Graph, `robots.txt`, and `sitemap.xml`.
-- Keep replacement guidance comments near the relevant links until final review.
+- Review canonical, hreflang, Open Graph, `robots.txt`, and `sitemap.xml` before publishing.
+- Review privacy policy and terms drafts before production release.
 - Do not commit Flutter app source code to this landing repository.
 - Do not commit Firebase configuration values.
 - Do not commit API keys, private auth secrets, private server URLs, customer data, or real vehicle identifiers.
@@ -45,11 +51,10 @@ This project uses only HTML, CSS, and vanilla JavaScript, so it can be deployed 
 
 The developer examples focus on Response Setting preset import files and a FastAPI server example. Keep any real endpoint URLs, auth values, and customer data out of this public landing repository.
 
+The privacy policy and terms pages are early testing drafts. Review legal, business, and contact details before production release.
+
 ## Later release changes
 
 - Change the top-right `Join testing` CTA to `Join us`.
 - Change the early testing `Join testing` CTA to the Google Play join link.
 - Add a `Contact us` CTA beside it for business email.
-
-# landing
-PixBridge landing page
