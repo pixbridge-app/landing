@@ -6,7 +6,7 @@
     <title>Privacy Policy | PixBridge</title>
     <meta
       name="description"
-      content="Privacy Policy for PixBridge, an early testing Camera-to-API mobile app."
+      content="Privacy Policy for PixBridge, a Camera-to-API mobile app."
     >
     <link rel="canonical" href="https://pixbridge-app.github.io/landing/privacy/">
     <link rel="alternate" hreflang="en" href="https://pixbridge-app.github.io/landing/privacy/">
@@ -16,7 +16,7 @@
     <meta property="og:title" content="Privacy Policy | PixBridge">
     <meta
       property="og:description"
-      content="How PixBridge may collect, use, and handle data during early testing."
+      content="How PixBridge may collect, use, and handle data for the Camera-to-API mobile app."
     >
     <meta property="og:url" content="https://pixbridge-app.github.io/landing/privacy/">
     <meta property="og:locale" content="en_US">
@@ -25,7 +25,7 @@
     <meta name="twitter:title" content="Privacy Policy | PixBridge">
     <meta
       name="twitter:description"
-      content="Privacy Policy for PixBridge early testing."
+      content="Privacy Policy for PixBridge."
     >
     <link rel="stylesheet" href="../style.css">
   </head>
@@ -51,9 +51,9 @@
         <aside class="document-hero">
           <p class="eyebrow">PixBridge</p>
           <h1>Privacy Policy</h1>
-          <p class="document-meta">Effective Date: July 4, 2026</p>
+          <p class="document-meta">Effective Date: July 14, 2026</p>
           <p>
-            This Privacy Policy explains how PixBridge handles information in connection with the mobile app, early testing program, and related pages.
+            This Privacy Policy explains how PixBridge handles information in connection with the mobile app, access requests, and related pages.
           </p>
           <div class="document-actions">
             <a class="button secondary" href="../">Back to PixBridge</a>
@@ -68,7 +68,7 @@
               PixBridge is a mobile Camera-to-API client. The app helps users capture images on a mobile device, send those images to a server API configured by the user, and display selected fields from the JSON response on the app screen.
             </p>
             <p>
-              PixBridge is currently in an early testing stage. This policy explains the data practices that may apply while users test the app and related services.
+              This policy explains the data practices that may apply when users access PixBridge and related services.
             </p>
           </section>
 
@@ -76,11 +76,11 @@
             <h2>2. Information We May Collect</h2>
             <h3>Account information</h3>
             <p>
-              If account features are enabled, PixBridge may collect information associated with sign-in, authentication, account identifiers, and user settings.
+              PixBridge uses Firebase Authentication for account sign-in and account management. PixBridge may collect information associated with authentication, account identifiers, and user settings.
             </p>
             <h3>Server configuration data</h3>
             <p>
-              Users may save server addresses, request or transmission format settings, image field names, response key settings, labels, types, and related app configuration. These settings may be linked to the user's account to support synchronization or reuse.
+              Users may save server addresses, request or transmission format settings, image field names, response key settings, labels, types, and related app configuration. These settings may be stored in Cloud Firestore and linked to the user's account to support synchronization or reuse.
             </p>
             <h3>Optional authentication tokens entered by the user</h3>
             <p>
@@ -94,13 +94,17 @@
             <p>
               PixBridge may process the JSON response returned by the user's configured API in order to display selected keys or fields in the app. Response setting data may include key names, labels, data types, and default display values.
             </p>
-            <h3>Early testing form submissions</h3>
+            <h3>Access request and contact form submissions</h3>
             <p>
-              Early testing forms may collect information such as name, email address, organization, intended use case, and feedback. These submissions may be used to contact testers and improve PixBridge.
+              Access request or contact forms may collect information such as name, email address, organization, intended use case, and message details. These submissions may be used to respond to requests, provide service information, and improve PixBridge.
             </p>
-            <h3>Basic technical/log data</h3>
+            <h3>Basic technical and usage data</h3>
             <p>
-              PixBridge or its service providers may process basic technical information such as device or app version, request status, error information, timing, response size, and similar diagnostic data needed for operation and improvement.
+              PixBridge or its service providers may process basic technical information such as device or app version, request status, timing, response size, and similar data needed for operation and improvement.
+            </p>
+            <h3>Payment and subscription information</h3>
+            <p>
+              PixBridge may use RevenueCat and app store payment providers to manage purchases, subscriptions, entitlement status, refunds, and related payment events. PixBridge does not directly receive full payment card details from users.
             </p>
           </section>
 
@@ -110,8 +114,9 @@
               <li>To provide the core Camera-to-API workflow.</li>
               <li>To save and reuse server configurations and response settings.</li>
               <li>To display selected JSON response fields in the app.</li>
-              <li>To support account, authentication, synchronization, and early testing communication.</li>
-              <li>To troubleshoot errors, improve reliability, and understand testing feedback.</li>
+              <li>To support account, authentication, synchronization, and service communication.</li>
+              <li>To manage purchases, subscriptions, entitlements, refunds, and payment-related support.</li>
+              <li>To maintain reliability, improve the service, and respond to user requests.</li>
               <li>To help protect the service, users, and related systems from misuse.</li>
             </ul>
           </section>
@@ -142,11 +147,15 @@
           <section>
             <h2>6. Third-Party Services</h2>
             <p>
-              PixBridge may use third-party services to support app operation, testing, hosting, and communication. These may include:
+              PixBridge may use third-party services to support app operation, hosting, communication, account-related features, and purchases. These may include:
             </p>
             <ul>
-              <li>Firebase or similar backend services for authentication, app configuration, account-linked settings, or data synchronization.</li>
-              <li>Tally or similar form services for early testing applications, contact forms, and feedback collection.</li>
+              <li>Firebase Authentication for sign-in and account management.</li>
+              <li>Cloud Firestore for account-linked settings, app configuration, response presets, send records, and related app data.</li>
+              <li>Cloud Functions for service operations connected to account, data, or purchase workflows.</li>
+              <li>RevenueCat for purchase, subscription, entitlement, and receipt-related services.</li>
+              <li>App Store or Google Play payment providers for payment processing, subscription management, refunds, chargebacks, and dispute handling.</li>
+              <li>Tally or similar form services for access requests, contact forms, and feedback collection.</li>
               <li>GitHub Pages for hosting the landing page, policy pages, and related static content.</li>
             </ul>
             <p>
@@ -157,17 +166,23 @@
           <section>
             <h2>7. Data Retention</h2>
             <p>
-              PixBridge may retain account-linked settings, server configurations, response settings, early testing submissions, and technical records for as long as needed to provide the service, support testing, troubleshoot issues, or meet operational needs.
+              PixBridge may retain account-linked settings, server configurations, response settings, form submissions, and technical records for as long as needed to provide the service, respond to requests, maintain reliability, or meet operational needs.
             </p>
             <p>
               User-configured external servers may retain images or API data according to their own policies. PixBridge does not control retention practices on servers configured by the user.
+            </p>
+            <p>
+              When a user deletes their account, PixBridge deletes app usage data stored on PixBridge-controlled systems, such as server addresses, Bearer tokens, response presets, send records, app settings, the Firebase Authentication account, and local cache where supported by the app.
+            </p>
+            <p>
+              Some limited records may be retained for a period where needed for payment, refund, subscription management, chargeback or dispute handling, security, fraud prevention, or legal obligations. RevenueCat and app store or play store payment providers may also retain purchase and subscription records under their own policies.
             </p>
           </section>
 
           <section>
             <h2>8. Security</h2>
             <p>
-              PixBridge is intended to use reasonable technical and organizational measures for the stage of the service. No mobile app, network transmission, or external API connection can be guaranteed to be completely secure.
+              PixBridge is intended to use reasonable technical and organizational measures to protect information. No mobile app, network transmission, or external API connection can be guaranteed to be completely secure.
             </p>
             <p>
               Users should avoid entering long-lived or overly broad Bearer tokens and should rotate or revoke tokens if they suspect exposure or misuse.
@@ -180,8 +195,14 @@
               <li>Users choose which server API to connect and what images to send.</li>
               <li>Users are responsible for having appropriate rights and permissions for images they capture, upload, or process.</li>
               <li>Users should review token scope, server security, and third-party API policies before connecting PixBridge.</li>
+              <li>Users can request account deletion in the app through Settings &gt; Account &gt; Delete Account.</li>
+              <li>Users may also send a data deletion request to <a href="mailto:pixbridge.personalplanet@gmail.com?subject=PixBridge%20Data%20Deletion%20Request">pixbridge.personalplanet@gmail.com</a>.</li>
+              <li>More details are available on the <a href="../data-deletion/">PixBridge Data Deletion</a> page.</li>
               <li>Users may request assistance or ask about data handling by contacting PixBridge.</li>
             </ul>
+            <p>
+              Account deletion does not necessarily cancel an active subscription. Users may need to cancel subscriptions through the app store subscription settings or the payment management menu in the app.
+            </p>
           </section>
 
           <section>
@@ -194,14 +215,14 @@
           <section>
             <h2>11. International Availability</h2>
             <p>
-              PixBridge may be accessed from different regions during testing. Data may be processed through third-party services or infrastructure located outside the user's country or region.
+              PixBridge may be accessed from different regions. Data may be processed through third-party services or infrastructure located outside the user's country or region.
             </p>
           </section>
 
           <section>
             <h2>12. Changes to This Policy</h2>
             <p>
-              PixBridge may update this Privacy Policy as the app, testing program, third-party services, or legal requirements change. The effective date will be updated when material changes are made.
+              PixBridge may update this Privacy Policy as the app, third-party services, business needs, or legal requirements change. The effective date will be updated when material changes are made.
             </p>
           </section>
 
@@ -220,7 +241,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>&copy; 2026 PixBridge. Early testing landing page.</p>
+        <p>&copy; 2026 PixBridge.</p>
         <div>
           <a href="./">Privacy</a>
           <a href="../terms/">Terms</a>

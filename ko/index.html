@@ -47,9 +47,8 @@
       <nav class="site-nav" id="site-nav" data-nav>
         <a href="#how">작동 방식</a>
         <a href="#features">기능</a>
-        <a href="#developers">예시</a>
-        <!-- Replace # with the product waitlist, docs, or contact URL before publishing. -->
-        <a class="nav-cta" href="#cta">테스트 참여</a>
+        <a href="#examples">예시</a>
+        <a class="nav-cta" href="#cta">이용 신청</a>
         <span class="language-switch" aria-label="언어 전환">
           <a href="../">EN</a>
           <span aria-hidden="true">/</span>
@@ -68,10 +67,8 @@
               사진을 촬영해 사용자가 설정한 API로 전송하고, 응답 JSON의 필요한 필드를 모바일 화면에 보기 쉽게 표시합니다.
             </p>
             <div class="hero-actions">
-              <!-- Replace # with the early testing signup URL before publishing. -->
-              <a class="button primary" href="#cta">테스트 참여</a>
-              <!-- Replace # with the public documentation URL before publishing. -->
-              <a class="button secondary" href="#developers">예시 보기</a>
+              <a class="button primary" href="#cta">이용 신청</a>
+              <a class="button secondary" href="#examples">예시 보기</a>
             </div>
           </div>
 
@@ -107,7 +104,7 @@
         <div class="container two-column">
           <div>
             <p class="eyebrow">문제</p>
-            <h2>이미지 API를 실제 모바일 환경에서 테스트할 방법이 필요합니다.</h2>
+            <h2>이미지 API를 실제 모바일 환경에서 사용할 방법이 필요합니다.</h2>
           </div>
           <div class="text-stack">
             <p>
@@ -140,7 +137,7 @@
             <article class="step-card">
               <span>03</span>
               <h3>표시</h3>
-              <p>응답 JSON의 필요한 필드를 검토, 테스트, 운영 확인에 적합한 결과 화면으로 표시합니다.</p>
+              <p>응답 JSON의 필요한 필드를 검토와 운영 확인에 적합한 결과 화면으로 표시합니다.</p>
             </article>
           </div>
         </div>
@@ -150,9 +147,9 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">사용 사례</p>
-            <h2>이미지 API 테스트부터 현장 활용까지 고려했습니다.</h2>
+            <h2>이미지 API를 현장 업무에 연결할 수 있도록 설계했습니다.</h2>
             <p>
-              PixBridge는 초기 API 검증, 프로토타입 확인뿐 아니라 현장에서 사진을 촬영하고 구조화된 서버 결과를 빠르게 확인해야 하는 운영 흐름까지 지원합니다.
+              PixBridge는 현장에서 사진을 촬영하고 구조화된 서버 결과를 빠르게 확인해야 하는 운영 흐름을 지원합니다.
             </p>
           </div>
           <div class="use-case-grid">
@@ -166,7 +163,7 @@
             </article>
             <article>
               <h3>프로토타입 검증</h3>
-              <p>전용 앱을 만들기 전에 모바일 클라이언트에서 이미지 분류, OCR, 감지 서비스를 테스트합니다.</p>
+              <p>전용 앱을 만들기 전에 모바일 클라이언트에서 이미지 분류, OCR, 감지 서비스를 확인합니다.</p>
             </article>
             <article>
               <h3>운영 QA</h3>
@@ -205,16 +202,16 @@
             </article>
             <article>
               <h3>전송 결과 확인</h3>
-              <p>전송 후 상태, 응답 크기, 응답값 매칭 결과를 확인할 수 있도록 준비하고 있습니다.</p>
+              <p>전송 후 상태, 응답 크기, 응답값 매칭 결과를 확인합니다.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="developers">
-        <div class="container developer-grid">
+      <section class="section" id="examples">
+        <div class="container examples-grid">
           <div>
-            <p class="eyebrow">개발자 예시</p>
+            <p class="eyebrow">예시</p>
             <h2>프리셋 가져오기와 서버 예시로 빠르게 시작합니다.</h2>
             <p>
               예제 저장소에는 응답값 설정 프리셋 파일과 간단한 FastAPI 이미지 업로드 서버 예시가 포함되어 있습니다.
@@ -224,7 +221,7 @@
             </div>
           </div>
           <div class="code-tabs" data-tabs>
-            <div class="tab-list" role="tablist" aria-label="개발자 예시">
+            <div class="tab-list" role="tablist" aria-label="예시">
               <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab="response-setting">프리셋 가져오기</button>
               <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="fastapi">FastAPI</button>
             </div>
@@ -266,11 +263,11 @@ async def analyze(image: UploadFile = File(...)):
 
       <section class="section cta-section" id="cta">
         <div class="container cta-panel">
-          <p class="eyebrow">얼리 테스트</p>
-          <h2>이미지 API 테스트부터 현장 활용까지, 모바일 카메라로 더 쉽게 연결해보세요.</h2>
-          <p>얼리 테스트에 참여해 PixBridge가 실제 이미지 API 워크플로에 더 잘 맞도록 피드백을 남겨주세요.</p>
+          <p class="eyebrow">이용 신청</p>
+          <h2>이미지 API를 실제 모바일 카메라 워크플로와 연결하세요.</h2>
+          <p>PixBridge를 어떻게 활용하려는지 알려주시면, 이용 안내와 다음 단계를 전달해 드립니다.</p>
           <div class="hero-actions">
-            <a class="button primary" href="https://tally.so/r/EkYk9l" target="_blank" rel="noopener noreferrer">테스트 참여</a>
+            <a class="button primary" href="https://tally.so/r/EkYk9l" target="_blank" rel="noopener noreferrer">이용 신청</a>
           </div>
         </div>
       </section>
@@ -278,7 +275,7 @@ async def analyze(image: UploadFile = File(...)):
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>&copy; 2026 PixBridge. 얼리 테스트 버전 안내 페이지입니다.</p>
+        <p>&copy; 2026 PixBridge.</p>
         <div>
           <a href="./privacy/">개인정보 처리방침</a>
           <a href="./terms/">이용약관</a>

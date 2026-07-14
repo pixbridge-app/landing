@@ -250,7 +250,7 @@ p {
 
 .hero-grid,
 .two-column,
-.developer-grid {
+.examples-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
   gap: 64px;
@@ -617,7 +617,7 @@ pre {
   margin-top: 26px;
 }
 
-.developer-grid {
+.examples-grid {
   align-items: start;
 }
 
@@ -768,7 +768,7 @@ pre {
 
   .hero-grid,
   .two-column,
-  .developer-grid {
+  .examples-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }

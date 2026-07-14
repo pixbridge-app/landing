@@ -33,4 +33,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pixbridge-app.github.io/landing/terms/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://pixbridge-app.github.io/landing/ko/terms/"/>
   </url>
+  <url>
+    <loc>https://pixbridge-app.github.io/landing/data-deletion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pixbridge-app.github.io/landing/data-deletion/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pixbridge-app.github.io/landing/ko/data-deletion/"/>
+  </url>
+  <url>
+    <loc>https://pixbridge-app.github.io/landing/ko/data-deletion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pixbridge-app.github.io/landing/data-deletion/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://pixbridge-app.github.io/landing/ko/data-deletion/"/>
+  </url>
 </urlset>

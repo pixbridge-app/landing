@@ -6,7 +6,7 @@
     <title>개인정보 처리방침 | PixBridge</title>
     <meta
       name="description"
-      content="PixBridge 초기 테스트용 개인정보 처리방침입니다."
+      content="PixBridge 개인정보 처리방침입니다."
     >
     <link rel="canonical" href="https://pixbridge-app.github.io/landing/ko/privacy/">
     <link rel="alternate" hreflang="en" href="https://pixbridge-app.github.io/landing/privacy/">
@@ -16,7 +16,7 @@
     <meta property="og:title" content="개인정보 처리방침 | PixBridge">
     <meta
       property="og:description"
-      content="PixBridge 초기 테스트 중 개인정보와 설정 데이터가 어떻게 처리될 수 있는지 설명합니다."
+      content="PixBridge에서 개인정보와 설정 데이터가 어떻게 처리될 수 있는지 설명합니다."
     >
     <meta property="og:url" content="https://pixbridge-app.github.io/landing/ko/privacy/">
     <meta property="og:locale" content="ko_KR">
@@ -25,7 +25,7 @@
     <meta name="twitter:title" content="개인정보 처리방침 | PixBridge">
     <meta
       name="twitter:description"
-      content="PixBridge 초기 테스트용 개인정보 처리방침입니다."
+      content="PixBridge 개인정보 처리방침입니다."
     >
     <link rel="stylesheet" href="../../style.css">
   </head>
@@ -51,9 +51,9 @@
         <aside class="document-hero">
           <p class="eyebrow">PixBridge</p>
           <h1>개인정보 처리방침</h1>
-          <p class="document-meta">시행일: 2026년 7월 4일</p>
+          <p class="document-meta">시행일: 2026년 7월 14일</p>
           <p>
-            이 개인정보 처리방침은 PixBridge 모바일 앱, 초기 테스트 프로그램, 관련 페이지에서 정보가 어떻게 처리될 수 있는지 설명합니다.
+            이 개인정보 처리방침은 PixBridge 모바일 앱, 이용 신청, 관련 페이지에서 정보가 어떻게 처리될 수 있는지 설명합니다.
           </p>
           <div class="document-actions">
             <a class="button secondary" href="../">PixBridge로 돌아가기</a>
@@ -68,7 +68,7 @@
               PixBridge는 모바일 Camera-to-API 클라이언트입니다. 사용자는 모바일 기기에서 이미지를 촬영하고, 사용자가 설정한 서버 API로 이미지를 전송한 뒤, API가 반환한 JSON 응답 중 선택한 필드를 앱 화면에서 확인할 수 있습니다.
             </p>
             <p>
-              PixBridge는 현재 초기 테스트 단계에 있습니다. 이 처리방침은 사용자가 앱과 관련 서비스를 테스트하는 동안 적용될 수 있는 데이터 처리 방식을 설명합니다.
+              이 처리방침은 사용자가 PixBridge와 관련 서비스를 이용하는 동안 적용될 수 있는 데이터 처리 방식을 설명합니다.
             </p>
           </section>
 
@@ -76,11 +76,11 @@
             <h2>2. 수집할 수 있는 정보</h2>
             <h3>계정 정보</h3>
             <p>
-              계정 기능이 제공되는 경우, 로그인, 인증, 계정 식별자, 사용자 설정과 관련된 정보가 처리될 수 있습니다.
+              PixBridge는 계정 로그인과 계정 관리를 위해 Firebase Authentication을 사용합니다. 인증, 계정 식별자, 사용자 설정과 관련된 정보가 처리될 수 있습니다.
             </p>
             <h3>서버 설정 데이터</h3>
             <p>
-              사용자는 서버 주소, 요청 방식 또는 전송 형식, 이미지 필드명, 응답값 key, label, type 및 관련 앱 설정을 저장할 수 있습니다. 이러한 설정은 동기화 또는 재사용을 위해 사용자 계정과 연결되어 저장될 수 있습니다.
+              사용자는 서버 주소, 요청 방식 또는 전송 형식, 이미지 필드명, 응답값 key, label, type 및 관련 앱 설정을 저장할 수 있습니다. 이러한 설정은 동기화 또는 재사용을 위해 Cloud Firestore에 저장되고 사용자 계정과 연결될 수 있습니다.
             </p>
             <h3>사용자가 입력하는 선택적 인증 토큰</h3>
             <p>
@@ -94,13 +94,17 @@
             <p>
               PixBridge는 사용자가 설정한 API가 반환한 JSON 응답을 읽고, 사용자가 설정한 key 또는 필드만 앱 화면에 표시할 수 있습니다. 응답값 설정에는 key, label, type, 기본 표시 값 등이 포함될 수 있습니다.
             </p>
-            <h3>초기 테스트 신청 정보</h3>
+            <h3>이용 신청 및 문의 정보</h3>
             <p>
-              초기 테스트 신청 폼은 이름, 이메일 주소, 소속, 사용 사례, 피드백 등을 수집할 수 있습니다. 이러한 정보는 초기 테스트 연락과 제품 개선 목적으로 사용될 수 있습니다.
+              이용 신청 또는 문의 폼은 이름, 이메일 주소, 소속, 사용 사례, 문의 내용 등을 수집할 수 있습니다. 이러한 정보는 요청에 응답하고, 서비스 안내를 제공하며, PixBridge를 개선하는 목적으로 사용될 수 있습니다.
             </p>
-            <h3>기본 기술/로그 데이터</h3>
+            <h3>기본 기술 및 이용 정보</h3>
             <p>
-              PixBridge 또는 관련 서비스 제공자는 앱 버전, 기기 정보, 요청 상태, 오류 정보, 처리 시간, 응답 크기 등 운영 및 개선에 필요한 기본 기술 정보를 처리할 수 있습니다.
+              PixBridge 또는 관련 서비스 제공자는 앱 버전, 기기 정보, 요청 상태, 처리 시간, 응답 크기 등 운영 및 개선에 필요한 기본 기술 정보를 처리할 수 있습니다.
+            </p>
+            <h3>결제 및 구독 정보</h3>
+            <p>
+              PixBridge는 구매, 구독, 이용 권한, 환불 및 관련 결제 이벤트를 관리하기 위해 RevenueCat과 앱스토어 또는 플레이스토어 결제 제공업체를 사용할 수 있습니다. PixBridge는 사용자의 전체 결제 카드 정보를 직접 수신하지 않습니다.
             </p>
           </section>
 
@@ -110,8 +114,9 @@
               <li>Camera-to-API 워크플로 제공</li>
               <li>서버 설정과 응답값 설정 저장 및 재사용</li>
               <li>응답 JSON의 선택된 필드 표시</li>
-              <li>계정, 인증, 동기화, 초기 테스트 연락 지원</li>
-              <li>오류 해결, 안정성 개선, 테스트 피드백 반영</li>
+              <li>계정, 인증, 동기화, 서비스 관련 연락 지원</li>
+              <li>구매, 구독, 이용 권한, 환불, 결제 관련 지원 관리</li>
+              <li>서비스 안정성 유지, 품질 개선, 사용자 요청 응답</li>
               <li>서비스, 사용자, 관련 시스템의 오남용 방지</li>
             </ul>
           </section>
@@ -141,10 +146,14 @@
 
           <section>
             <h2>6. 제3자 서비스</h2>
-            <p>PixBridge는 앱 운영, 테스트, 호스팅, 커뮤니케이션을 위해 다음과 같은 제3자 서비스를 사용할 수 있습니다.</p>
+            <p>PixBridge는 앱 운영, 호스팅, 커뮤니케이션, 계정 관련 기능, 구매 관리를 위해 다음과 같은 제3자 서비스를 사용할 수 있습니다.</p>
             <ul>
-              <li>Firebase 또는 유사한 백엔드 서비스: 인증, 앱 설정, 계정 연동 설정, 데이터 동기화 등</li>
-              <li>Tally 또는 유사한 폼 서비스: 초기 테스트 신청, 문의, 피드백 수집 등</li>
+              <li>Firebase Authentication: 로그인 및 계정 관리</li>
+              <li>Cloud Firestore: 계정 연동 설정, 앱 설정, 응답 프리셋, 전송 기록 및 관련 앱 데이터 저장</li>
+              <li>Cloud Functions: 계정, 데이터 또는 구매 흐름과 연결된 서비스 처리</li>
+              <li>RevenueCat: 구매, 구독, 이용 권한, 영수증 관련 서비스</li>
+              <li>App Store 또는 Google Play 결제 제공업체: 결제 처리, 구독 관리, 환불, 차지백 및 분쟁 대응</li>
+              <li>Tally 또는 유사한 폼 서비스: 이용 신청, 문의, 피드백 수집 등</li>
               <li>GitHub Pages: 랜딩 페이지, 정책 페이지 및 관련 정적 콘텐츠 호스팅</li>
             </ul>
             <p>
@@ -155,10 +164,16 @@
           <section>
             <h2>7. 데이터 보관</h2>
             <p>
-              PixBridge는 서비스 제공, 테스트 지원, 문제 해결, 운영상 필요를 위해 계정 연동 설정, 서버 설정, 응답값 설정, 초기 테스트 신청 정보, 기술 기록을 필요한 기간 동안 보관할 수 있습니다.
+              PixBridge는 서비스 제공, 요청 응답, 안정성 유지, 운영상 필요를 위해 계정 연동 설정, 서버 설정, 응답값 설정, 폼 제출 정보, 기술 정보를 필요한 기간 동안 보관할 수 있습니다.
             </p>
             <p>
               사용자가 설정한 외부 서버는 자체 정책에 따라 이미지 또는 API 데이터를 보관할 수 있습니다. PixBridge는 사용자가 설정한 외부 서버의 보관 정책을 통제하지 않습니다.
+            </p>
+            <p>
+              사용자가 계정을 삭제하면 PixBridge가 관리하는 시스템에 저장된 앱 사용 데이터가 삭제됩니다. 삭제 대상에는 서버 주소, Bearer token, 응답 프리셋, 전송 기록, 앱 설정, Firebase Authentication 계정, 앱에서 지원되는 로컬 캐시가 포함됩니다.
+            </p>
+            <p>
+              결제, 환불, 구독 관리, 차지백 또는 분쟁 대응, 보안, 부정사용 방지, 법적 의무 이행에 필요한 최소 기록은 일정 기간 보관될 수 있습니다. RevenueCat 및 앱스토어 또는 플레이스토어 결제 제공업체에도 각자의 정책에 따라 결제 및 구독 기록이 남을 수 있습니다.
             </p>
           </section>
 
@@ -178,8 +193,14 @@
               <li>사용자는 어떤 서버 API에 연결하고 어떤 이미지를 전송할지 선택합니다.</li>
               <li>사용자는 촬영, 업로드, 처리하는 이미지에 대해 적절한 권리와 권한을 가지고 있어야 합니다.</li>
               <li>사용자는 토큰 권한 범위, 서버 보안, 제3자 API 정책을 확인한 뒤 PixBridge에 연결해야 합니다.</li>
+              <li>사용자는 앱의 설정 &gt; 계정 &gt; 계정 삭제에서 계정 삭제를 요청할 수 있습니다.</li>
+              <li>별도 데이터 삭제 요청은 <a href="mailto:pixbridge.personalplanet@gmail.com?subject=PixBridge%20Data%20Deletion%20Request">pixbridge.personalplanet@gmail.com</a>으로 보낼 수 있습니다.</li>
+              <li>자세한 내용은 <a href="../data-deletion/">PixBridge 데이터 삭제 안내</a> 페이지에서 확인할 수 있습니다.</li>
               <li>사용자는 PixBridge의 데이터 처리에 대해 문의하거나 도움을 요청할 수 있습니다.</li>
             </ul>
+            <p>
+              계정 삭제가 활성 구독의 취소를 자동으로 보장하지는 않습니다. 사용자는 스토어의 구독 관리 화면 또는 앱의 결제 관리 메뉴에서 구독을 별도로 취소해야 할 수 있습니다.
+            </p>
           </section>
 
           <section>
@@ -192,14 +213,14 @@
           <section>
             <h2>11. 국제적 이용 가능성</h2>
             <p>
-              PixBridge는 테스트 과정에서 여러 지역에서 접근될 수 있습니다. 데이터는 사용자의 국가 또는 지역 외부에 위치한 제3자 서비스나 인프라를 통해 처리될 수 있습니다.
+              PixBridge는 여러 지역에서 접근될 수 있습니다. 데이터는 사용자의 국가 또는 지역 외부에 위치한 제3자 서비스나 인프라를 통해 처리될 수 있습니다.
             </p>
           </section>
 
           <section>
             <h2>12. 처리방침 변경</h2>
             <p>
-              PixBridge는 앱, 테스트 프로그램, 제3자 서비스, 법적 요구사항 변경에 따라 이 개인정보 처리방침을 업데이트할 수 있습니다. 중요한 변경이 있는 경우 시행일을 갱신합니다.
+              PixBridge는 앱, 제3자 서비스, 비즈니스 필요, 법적 요구사항 변경에 따라 이 개인정보 처리방침을 업데이트할 수 있습니다. 중요한 변경이 있는 경우 시행일을 갱신합니다.
             </p>
           </section>
 
@@ -218,7 +239,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>&copy; 2026 PixBridge. 얼리 테스트 버전 안내 페이지입니다.</p>
+        <p>&copy; 2026 PixBridge.</p>
         <div>
           <a href="./">개인정보 처리방침</a>
           <a href="../terms/">이용약관</a>
