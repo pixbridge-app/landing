@@ -102,6 +102,16 @@
             <p>
               PixBridge or its service providers may process basic technical information such as device or app version, request status, timing, response size, and similar data needed for operation and improvement.
             </p>
+            <h3>Google Analytics for Firebase data</h3>
+            <p>
+              PixBridge uses Google Analytics for Firebase. Firebase Analytics is enabled by default when the app is installed and used. The Firebase SDK may automatically collect events such as first_open, session_start, and user_engagement, and PixBridge may log additional custom events for major feature flows.
+            </p>
+            <p>
+              Analytics data may include app launch and session information, app feature usage and interaction information, screen or feature visits, app version, operating system, device type, language, technical identifiers used to distinguish app installation instances, subscription page visits and entitlement activation status, image send success or failure, non-identifying failure categories, and feature events such as server creation, server switching, preset use, import, and export.
+            </p>
+            <p>
+              PixBridge uses allowed category values and aggregate values for custom Analytics events. PixBridge does not include the following in custom Analytics event parameters: actual server URLs, hostnames, endpoint paths, query strings, Bearer tokens, API keys, captured images, image file names or file paths, raw response JSON, response bodies, user-defined response keys, labels, values, email addresses, user names, Firebase uid values, IP addresses directly recorded by PixBridge as custom event parameters, server names, preset names, free-text strings, exception messages, stack traces, transaction IDs, or receipts.
+            </p>
             <h3>Payment and subscription information</h3>
             <p>
               PixBridge may use RevenueCat and app store payment providers to manage purchases, subscriptions, entitlement status, refunds, and related payment events. PixBridge does not directly receive full payment card details from users.
@@ -116,9 +126,16 @@
               <li>To display selected JSON response fields in the app.</li>
               <li>To support account, authentication, synchronization, and service communication.</li>
               <li>To manage purchases, subscriptions, entitlements, refunds, and payment-related support.</li>
-              <li>To maintain reliability, improve the service, and respond to user requests.</li>
+              <li>To analyze app usage, including the flow from new sign-up to server creation, image sending, and record review.</li>
+              <li>To analyze image send success rates and non-identifying error categories.</li>
+              <li>To analyze subscription page visits and actual plan activation flows.</li>
+              <li>To improve feature usability, performance, app stability, and user experience.</li>
+              <li>To investigate bugs, maintain reliability, improve the service, and respond to user requests.</li>
               <li>To help protect the service, users, and related systems from misuse.</li>
             </ul>
+            <p>
+              PixBridge does not use Analytics data for advertising, user profiling for advertising, or personalized advertising.
+            </p>
           </section>
 
           <section>
@@ -150,21 +167,39 @@
               PixBridge may use third-party services to support app operation, hosting, communication, account-related features, and purchases. These may include:
             </p>
             <ul>
+              <li>Google Analytics for Firebase for app usage measurement and feature flow analysis.</li>
               <li>Firebase Authentication for sign-in and account management.</li>
               <li>Cloud Firestore for account-linked settings, app configuration, response presets, send records, and related app data.</li>
-              <li>Cloud Functions for service operations connected to account, data, or purchase workflows.</li>
+              <li>Firebase Remote Config for app configuration and feature behavior.</li>
+              <li>Firebase Cloud Functions for service operations connected to account, data, or purchase workflows.</li>
               <li>RevenueCat for purchase, subscription, entitlement, and receipt-related services.</li>
-              <li>App Store or Google Play payment providers for payment processing, subscription management, refunds, chargebacks, and dispute handling.</li>
+              <li>Google Play Billing or Google Play payment services, and App Store payment providers, for payment processing, subscription management, refunds, chargebacks, and dispute handling.</li>
               <li>Tally or similar form services for access requests, contact forms, and feedback collection.</li>
               <li>GitHub Pages for hosting the landing page, policy pages, and related static content.</li>
             </ul>
             <p>
               These third-party services may process data under their own terms and privacy policies.
             </p>
+            <p>
+              For Google Analytics for Firebase, Google may process app measurement data as a service provider. More information is available in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a> documentation.
+            </p>
           </section>
 
           <section>
-            <h2>7. Data Retention</h2>
+            <h2>7. Analytics Collection and Choices</h2>
+            <p>
+              Firebase Analytics is enabled by default when the app is installed and used. PixBridge does not currently provide a separate in-app opt-in step for Analytics.
+            </p>
+            <p>
+              The Firebase SDK may automatically collect certain events, and PixBridge may collect additional custom events showing whether important feature steps were completed and which allowed category values apply. Analytics collection failure does not block the core Camera-to-API features of the app.
+            </p>
+            <p>
+              PixBridge does not include direct user-entered information such as email addresses, user names, server URLs, tokens, raw responses, or free-text strings in custom Analytics events. Firebase Analytics may process technical identifiers used to distinguish app installation instances. Analytics information is used for aggregated usage insights and feature improvement.
+            </p>
+          </section>
+
+          <section>
+            <h2>8. Data Retention</h2>
             <p>
               PixBridge may retain account-linked settings, server configurations, response settings, form submissions, and technical records for as long as needed to provide the service, respond to requests, maintain reliability, or meet operational needs.
             </p>
@@ -177,12 +212,15 @@
             <p>
               Some limited records may be retained for a period where needed for payment, refund, subscription management, chargeback or dispute handling, security, fraud prevention, or legal obligations. RevenueCat and app store or play store payment providers may also retain purchase and subscription records under their own policies.
             </p>
+            <p>
+              Analytics data may be processed according to the configured Google Analytics or Firebase retention settings and Google's applicable retention policies. Account deletion does not necessarily guarantee immediate deletion of all aggregate or non-identifying Analytics data. App instance-based Analytics data may be handled separately under Google Analytics or Firebase settings and policies.
+            </p>
           </section>
 
           <section>
-            <h2>8. Security</h2>
+            <h2>9. Security</h2>
             <p>
-              PixBridge is intended to use reasonable technical and organizational measures to protect information. No mobile app, network transmission, or external API connection can be guaranteed to be completely secure.
+              PixBridge uses reasonable technical and organizational measures to protect information. No mobile app, network transmission, or external API connection can be guaranteed to be completely secure.
             </p>
             <p>
               Users should avoid entering long-lived or overly broad Bearer tokens and should rotate or revoke tokens if they suspect exposure or misuse.
@@ -190,7 +228,7 @@
           </section>
 
           <section>
-            <h2>9. User Choices and Responsibilities</h2>
+            <h2>10. User Choices and Responsibilities</h2>
             <ul>
               <li>Users choose which server API to connect and what images to send.</li>
               <li>Users are responsible for having appropriate rights and permissions for images they capture, upload, or process.</li>
@@ -203,31 +241,34 @@
             <p>
               Account deletion does not necessarily cancel an active subscription. Users may need to cancel subscriptions through the app store subscription settings or the payment management menu in the app.
             </p>
+            <p>
+              Users can stop future app usage data collection by deleting the app. Advertising and privacy settings provided by the operating system or Google account may be managed separately under the relevant platform policies.
+            </p>
           </section>
 
           <section>
-            <h2>10. Children's Privacy</h2>
+            <h2>11. Children's Privacy</h2>
             <p>
               PixBridge is not intended for use by children. Users should not submit information about children or images of children unless they have a lawful basis and appropriate authority to do so.
             </p>
           </section>
 
           <section>
-            <h2>11. International Availability</h2>
+            <h2>12. International Availability</h2>
             <p>
               PixBridge may be accessed from different regions. Data may be processed through third-party services or infrastructure located outside the user's country or region.
             </p>
           </section>
 
           <section>
-            <h2>12. Changes to This Policy</h2>
+            <h2>13. Changes to This Policy</h2>
             <p>
               PixBridge may update this Privacy Policy as the app, third-party services, business needs, or legal requirements change. The effective date will be updated when material changes are made.
             </p>
           </section>
 
           <section>
-            <h2>13. Contact</h2>
+            <h2>14. Contact</h2>
             <div class="document-note">
               <p>
                 For questions about this Privacy Policy or PixBridge data handling, contact:
