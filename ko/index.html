@@ -72,30 +72,49 @@
             </div>
           </div>
 
-          <div class="product-shot" aria-label="PixBridge 제품 미리보기">
-            <div class="phone-frame">
-              <div class="phone-top"></div>
-              <div class="camera-panel">
-                <div class="scan-box">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <p>카메라 미리보기</p>
-              </div>
-              <div class="response-panel">
-                <div class="response-header">
-                  <span>Status 200</span>
-                  <span>JSON</span>
-                </div>
-                <pre>{
-  "type": "inspection",
-  "confidence": 0.97,
-  "result": "ready"
-}</pre>
+          <div class="product-shot" data-carousel role="region" aria-roledescription="carousel"
+            aria-label="PixBridge 앱 화면" tabindex="0">
+            <div class="carousel-viewport" data-carousel-viewport>
+              <div class="carousel-track" data-carousel-track>
+                <figure class="carousel-slide is-active" data-carousel-slide aria-hidden="false"
+                  aria-label="화면 1/6">
+                  <div class="phone-frame">
+                    <img src="../assets/screenshots/ko_01.png" alt="PixBridge 앱 화면 1" fetchpriority="high">
+                  </div>
+                </figure>
+                <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="화면 2/6">
+                  <div class="phone-frame">
+                    <img src="../assets/screenshots/ko_02.png" alt="PixBridge 앱 화면 2" loading="lazy">
+                  </div>
+                </figure>
+                <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="화면 3/6">
+                  <div class="phone-frame">
+                    <img src="../assets/screenshots/ko_03.png" alt="PixBridge 앱 화면 3" loading="lazy">
+                  </div>
+                </figure>
+                <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="화면 4/6">
+                  <div class="phone-frame">
+                    <img src="../assets/screenshots/ko_04.png" alt="PixBridge 앱 화면 4" loading="lazy">
+                  </div>
+                </figure>
+                <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="화면 5/6">
+                  <div class="phone-frame">
+                    <img src="../assets/screenshots/ko_05.png" alt="PixBridge 앱 화면 5" loading="lazy">
+                  </div>
+                </figure>
+                <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="화면 6/6">
+                  <div class="phone-frame">
+                    <img src="../assets/screenshots/ko_06.png" alt="PixBridge 앱 화면 6" loading="lazy">
+                  </div>
+                </figure>
               </div>
             </div>
+            <div class="carousel-toolbar">
+              <button class="carousel-button" type="button" data-carousel-previous aria-label="이전 화면">←</button>
+              <div class="carousel-dots" data-carousel-dots aria-label="화면 선택"></div>
+              <button class="carousel-button" type="button" data-carousel-next aria-label="다음 화면">→</button>
+            </div>
+            <p class="sr-only" data-carousel-status aria-live="polite">화면 1/6</p>
           </div>
         </div>
       </section>

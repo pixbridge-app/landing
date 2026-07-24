@@ -78,30 +78,49 @@
           </div>
         </div>
 
-        <div class="product-shot" aria-label="PixBridge product preview">
-          <div class="phone-frame">
-            <div class="phone-top"></div>
-            <div class="camera-panel">
-              <div class="scan-box">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <p>Camera preview</p>
-            </div>
-            <div class="response-panel">
-              <div class="response-header">
-                <span>Status 200</span>
-                <span>JSON</span>
-              </div>
-              <pre>{
-  "type": "inspection",
-  "confidence": 0.97,
-  "result": "ready"
-}</pre>
+        <div class="product-shot" data-carousel role="region" aria-roledescription="carousel"
+          aria-label="PixBridge app screenshots" tabindex="0">
+          <div class="carousel-viewport" data-carousel-viewport>
+            <div class="carousel-track" data-carousel-track>
+              <figure class="carousel-slide is-active" data-carousel-slide aria-hidden="false"
+                aria-label="Screenshot 1 of 6">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/en_01.png" alt="PixBridge app screenshot 1" fetchpriority="high">
+                </div>
+              </figure>
+              <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="Screenshot 2 of 6">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/en_02.png" alt="PixBridge app screenshot 2" loading="lazy">
+                </div>
+              </figure>
+              <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="Screenshot 3 of 6">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/en_03.png" alt="PixBridge app screenshot 3" loading="lazy">
+                </div>
+              </figure>
+              <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="Screenshot 4 of 6">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/en_04.png" alt="PixBridge app screenshot 4" loading="lazy">
+                </div>
+              </figure>
+              <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="Screenshot 5 of 6">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/en_05.png" alt="PixBridge app screenshot 5" loading="lazy">
+                </div>
+              </figure>
+              <figure class="carousel-slide" data-carousel-slide aria-hidden="true" aria-label="Screenshot 6 of 6">
+                <div class="phone-frame">
+                  <img src="assets/screenshots/en_06.png" alt="PixBridge app screenshot 6" loading="lazy">
+                </div>
+              </figure>
             </div>
           </div>
+          <div class="carousel-toolbar">
+            <button class="carousel-button" type="button" data-carousel-previous aria-label="Previous screenshot">←</button>
+            <div class="carousel-dots" data-carousel-dots aria-label="Choose a screenshot"></div>
+            <button class="carousel-button" type="button" data-carousel-next aria-label="Next screenshot">→</button>
+          </div>
+          <p class="sr-only" data-carousel-status aria-live="polite">Screenshot 1 of 6</p>
         </div>
       </div>
     </section>
